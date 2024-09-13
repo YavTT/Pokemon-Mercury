@@ -1,0 +1,53 @@
+.LifeHero {
+    width: 300px;
+    height: 15px;
+    padding: 2px;
+    margin: auto 0;
+    background-color: #03f417;
+    border: 2px solid #756c6c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(350px) translateX(850px)
+}
+.LifeOponente{
+    width: 300px;
+    height: 15px;
+    padding: 2px;
+    margin: auto 0;
+    background-color: #03f417;
+    border: 2px solid #756c6c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(0px) translateX(500px)
+
+}
+
+.Hero{
+    width: 500px;
+    height: 100px;
+    padding: 2px;
+    margin: auto 0;
+    background-color: #efefef;
+    border: 2px solid #020000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(420px) translateX(380px)
+}
+
+.Attack{
+    width: 250px;
+    height: 100px;
+    padding: 2px;
+    margin: auto 0;
+    background-color: #efefef;
+    border: 2px solid #020000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(320px) translateX(900px);
+    text-align: center;
+    cursor: pointer;
+  } 
+
+  .texto{
+    margin-top: 20px;
+  }

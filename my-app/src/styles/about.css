@@ -1,0 +1,120 @@
+.container-devs {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.background-geral {
+  background-image: url("../../images/fundo2.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.titulo-sub {
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 30px; /* Espaço abaixo da seção de título e descrição */
+}
+
+.titulo-sub h3 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.titulo-sub p {
+  margin-top: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas com tamanho flexível */
+  gap: 15px; /* Espaço entre os itens */
+  justify-items: center; /* Alinha os itens ao centro da coluna */
+}
+
+.card-item {
+  background-color: #d3e6fd;
+  border-radius: 14px;
+  text-align: center;
+  transition: 0.3s;
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+  max-width: 450px; /* Define uma largura máxima para os itens */
+  width: 100%; /* Garante que os itens ocupem toda a largura disponível da coluna */
+  background-image: url('../../images/fundo8.jpg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Faz a imagem cobrir o elemento */
+  background-position: center; /* Centraliza a imagem no elemento */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+.card-item .icone-poke {
+  border-radius: 100%;
+  width: 80px;
+  display: block;
+  margin: 10px auto;
+}
+
+.nome-user {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.depoimento-user {
+  font-size: 15px;
+  padding: 15px 15px;
+}
+
+.card-item:hover {
+  background-color: #4f9cf9;
+  margin-top: -5px;
+}
+
+.card-item:hover .nome-user,
+.card-item:hover .depoimento-user {
+  color: rgb(7, 7, 7);
+  font-weight: bold;
+}
+
+main {
+  padding-bottom: 25px;
+}
+
+footer img {
+  padding-left: 25px;
+  max-width: 200px;
+}
+
+footer {
+  background: var(--header_footer);
+  color: white;
+  height: 180px;
+}
+
+footer .container-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .container-footer ul {
+  width: 50%;
+}
+
+footer .container-footer h3 {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+footer .container-footer .redes-socias img {
+  margin-right: 10px;
+}
+
+footer .container-footer ul > p {
+  margin-bottom: 40px;
+}
+
+footer .container-footer li {
+  margin: 10px 0;
+}

@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.game-container {
+  position: relative;
+  width: 500px;
+  height: 100px;
+  padding-top: 0px;
+  margin: 0 auto;
+
+  transform: scale(2) translateY(50%);
+}
+
+.game-container canvas {
+  image-rendering: pixelated;
+}
+
+.battle-container{
+  position: relative;
+  width: 500px;
+  height: 100px;
+  padding-top: 0px;
+  margin: 0 auto;
+  z-index: -1;
+
+  transform: scale(3.2) translateY(50%);
+}
+
+.battle-container canvas {
+  image-rendering: pixelated;
+}
+
+.HowToPlay{
+    width: 250px;
+    height: 250px;
+    padding: 2px;
+    margin: 0 auto; ; /* Remove o margin auto que centraliza o bloco horizontalmente */
+    background-color: #f0990e;
+    border: 2px solid #0b0505;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform : translateX(-635px) translateY(-50px)
+}
+
+.Attack{
+  width: 250px;
+  height: 250px;
+  margin: auto 0;
+}

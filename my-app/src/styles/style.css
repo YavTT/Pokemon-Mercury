@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Tiny5&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+/* variáveis que armazenam valores como cores e degradês, para serem usadas em todo o código CSS. Essas variáveis ajudam a manter o código organizado e facilitam a manutenção. Elas são usadas substituindo os valores diretamente nos estilos, o que torna o código mais limpo e legível.*/
+:root {
+  --header_footer: linear-gradient(
+    to bottom,
+    #12191a,
+    #1c2324,
+    #313c28,
+    #4f512f
+  );
+}
+
+body {
+  font-family: "Tiny5", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+header {
+  color: white;
+  background: linear-gradient(to top, #12191a, #1c2324, #313c28, #4f512f);
+}
+
+.container h1 {
+  padding-left: 750px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 45px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul a {
+  color: white;
+  margin: 0 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+}
+
+nav ul a:not(.btn):after {
+  content: "";
+  background-color: white;
+  height: 3px;
+  width: 0%;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+nav ul a:hover::after {
+  width: 100%;
+}
+
+/* Estilo para o contêiner main */
+main.container {
+  background-image: url("/images/backjig.gif");
+  height: 400px;
+  background-size: cover; /* Faz com que a imagem cubra o elemento completamente */
+  background-repeat: no-repeat; /* Impede que a imagem se repita se for menor que o tamanho do elemento */
+  display: flex; /* Habilita o layout flexível */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  position: relative; /* Necessário para a animação */
+}
+
+/* Estilo para a imagem */
+main img {
+  max-width: 100%;
+  height: 100%;
+  /* animation: fadeIn 2s ease-out; Aplica a animação de surgimento */
+}
+
+/* Animação de surgimento */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5); /* Começa do tamanho reduzido */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1); /* Termina no tamanho original */
+  }
+}
+
+.fade-in{
+  animation : fadeIn 1s ease-in;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+/* Contêiner flexível para a seção */
+section {
+  color: white;
+  display: flex;
+  align-items: flex-start; /* Alinha os itens no início do contêiner flexível */
+  padding: 0px;
+  background-image: url('/images/fundo50.jpg');
+}
+
+/* Estilo para os artigos dentro da seção */
+.left,
+.right {
+  flex: 1; /* Faz com que cada artigo ocupe 50% do espaço disponível */
+  padding: 0px; /*tirar a margem de baixo*/
+}
+
+/* Específico para o artigo .left */
+.left {
+  display: flex;
+  flex-direction: column; /* Organiza o conteúdo verticalmente */
+  justify-content: flex-start; /* Alinha o conteúdo ao início */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  text-align: center;
+}
+
+/* Específico para o artigo .right */
+.right {
+  display: flex;
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  text-align: center; /* Alinha o texto no centro */
+}
+
+.right img {
+  /* padding-bottom: 15px; */
+  border-radius: 10px;
+  width: 400px; /* Define a largura da imagem */
+  height: 400px; /* Define a altura da imagem */
+}
+
+.left {
+  display: flex;
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  text-align: center; /* Alinha o texto no centro */
+}
+
+.left img {
+  border-radius: 10px;
+  width: 400px; /* Define a largura da imagem */
+  height: 400px; /* Define a altura da imagem */
+}
+
+.btn-game {
+  display: inline-block; /* Garante que o botão não ocupe a linha inteira */
+  margin-top: -120px; /* Adiciona um espaço de 20px acima do botão */
+}
+
+.btn-game img {
+  width: 500px; /* Define a largura do botão */
+  height: 500px; /* Define a altura do botão */
+  display: block; /* Remove o espaço em branco abaixo da imagem */
+}
